@@ -38,8 +38,7 @@ namespace LambtechRele
         {
             _port = new SerialPort(cmbPorts.SelectedItem.ToString());
 
-            if (_port == null)
-            {
+           
                 //configure serial port
                 _port.BaudRate = 9600;
                 _port.DataBits = 8;
@@ -51,7 +50,7 @@ namespace LambtechRele
                 // SerialDataReceivedEventHandler(port_DataReceived);
                 _port.Open();
 
-            }
+            
 
             //btnConectar.Enabled = false;
             btnConectar.Style = MetroColorStyle.Green;
