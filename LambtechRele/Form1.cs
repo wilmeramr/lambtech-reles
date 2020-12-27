@@ -36,6 +36,8 @@ namespace LambtechRele
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
+            _port = new SerialPort(cmbPorts.SelectedItem.ToString());
+
             if (_port == null)
             {
                 //configure serial port
